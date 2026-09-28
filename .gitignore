@@ -1,9 +1,9 @@
 # dependencies
 node_modules/
 
-# build output: KEPT in repo because GitHub Pages serves this repo as static files
-# (source-only deploy via Actions would require extra setup; V1 ships dist/ directly)
-# dist/
+# build output: GitHub Actions builds dist/ on every push — no need to commit it
+dist/
+.vite/
 
 # logs
 npm-debug.log*
@@ -23,7 +23,5 @@ Thumbs.db
 # workbuddy internal — not for public repo
 .workbuddy/
 
-# local files (avatars, PDFs) that may be large
-public/files/*.pdf
-public/images/avatar.*
-!public/images/avatar.svg
+# CV and avatar ARE committed (small, needed by the Actions build):
+# public/files/cv.pdf, public/files/cv.docx, public/images/avatar.jpg
