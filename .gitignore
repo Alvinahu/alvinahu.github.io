@@ -1,0 +1,29 @@
+# dependencies
+node_modules/
+
+# build output: KEPT in repo because GitHub Pages serves this repo as static files
+# (source-only deploy via Actions would require extra setup; V1 ships dist/ directly)
+# dist/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# editor / OS
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db
+
+# env
+.env
+.env.local
+
+# workbuddy internal — not for public repo
+.workbuddy/
+
+# local files (avatars, PDFs) that may be large
+public/files/*.pdf
+public/images/avatar.*
+!public/images/avatar.svg
